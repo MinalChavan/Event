@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     
+    android:orientation="vertical"
+    android:paddingTop="1dp"
+     android:background="@drawable/seven"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:text="Edit Event"
+        android:textStyle="bold" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_purple" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/seven"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="removeevent"
+            android:text="Delete"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eventName"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="63dp"
+            android:background="@android:color/holo_purple"
+            android:onClick="editevent"
+            android:text="Edit"
+            android:textColor="@android:color/white" />
+
+       
+
+        <EditText
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Event Name" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eventName"
+            android:layout_below="@+id/eventName"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="Location" />
+        
+         <EditText
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/location"
+            android:layout_below="@+id/location"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/date"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Fees"
+            android:inputType="phone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SecondActivity"
+    android:background="@drawable/seven"
+     >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What do you want to do ???? " 
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+       
+        />
+
+    <Button
+        android:id="@+id/reg_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+       
+        android:text=" Registration "
+         android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/edit_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_button"
+        android:layout_below="@+id/reg_button"
+        android:layout_marginTop="24dp"
+        android:text="  Edit/Delete  "
+          android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"  />
+
+    <Button
+        android:id="@+id/info_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_button"
+        android:layout_centerVertical="true"
+        android:text="       Details      "
+          android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" 
+         />
+
+   
+</RelativeLayout>

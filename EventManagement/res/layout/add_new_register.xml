@@ -1,0 +1,279 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical"
+    android:paddingTop="1dp" 
+    android:background="@drawable/seven">
+
+   <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#000000"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Add Entry"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+        
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#454545"
+            android:onClick="addNewentry"
+            android:text="Done"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:orientation="vertical"
+        android:padding="10dp" 
+        android:background="@drawable/seven">
+  
+		 <TextView
+            android:id="@+id/member1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Group Member1"
+            android:textColor="@android:color/holo_red_dark" />
+		 
+        <EditText
+            android:id="@+id/fname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/member1"
+            android:hint="First Name" />
+        
+        <EditText
+            android:id="@+id/lname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/fname1"
+            android:hint="Last Name" />
+        
+        <EditText
+            android:id="@+id/college1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/lname1"
+            android:hint="College Name" />
+        
+        <EditText
+            android:id="@+id/mob_no1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/college1"
+            android:hint="Mobile No." 
+            android:inputType="number"/>
+        
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/mob_no1"
+            android:hint="Email ID" 
+            android:inputType="textEmailAddress"/>
+
+         <TextView
+            android:id="@+id/member2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/email1"
+            android:text="Group Member2"
+            android:textColor="@android:color/holo_red_dark" />
+         
+        <EditText
+            android:id="@+id/fname2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+            android:hint="First Name"
+            android:layout_below="@+id/member2"/>
+			
+        
+        <EditText
+            android:id="@+id/lname2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/fname2"
+            android:hint="Last Name" />
+        
+        <EditText
+            android:id="@+id/college2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/lname2"
+            android:hint="College Name" />
+        
+        <EditText
+            android:id="@+id/mob_no2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/college2"
+            android:hint="Mobile No." 
+             android:inputType="number"/>
+        
+        <EditText
+            android:id="@+id/email2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/mob_no2"
+            android:hint="Email ID"
+             android:inputType="textEmailAddress" />
+        
+         <TextView
+            android:id="@+id/member3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/email2"
+            android:text="Group Member3"
+            android:textColor="@android:color/holo_red_dark" />
+         
+         <EditText
+            android:id="@+id/fname3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+            android:hint="First Name"
+            android:layout_below="@+id/member3"/>
+			
+        
+        <EditText
+            android:id="@+id/lname3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/fname3"
+            android:hint="Last Name" />
+        
+        <EditText
+            android:id="@+id/college3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/lname3"
+            android:hint="College Name" />
+        
+        <EditText
+            android:id="@+id/mob_no3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/college3"
+            android:hint="Mobile No." 
+             android:inputType="number"/>
+        
+        <EditText
+            android:id="@+id/email3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/mob_no3"
+            android:hint="Email ID"
+             android:inputType="textEmailAddress" />
+        
+         <TextView
+            android:id="@+id/member4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/email3"
+            android:text="Group Member4"
+            android:textColor="@android:color/holo_red_dark" />
+         
+         <EditText
+            android:id="@+id/fname4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+            android:hint="First Name"
+            android:layout_below="@+id/member4"/>
+			
+        
+        <EditText
+            android:id="@+id/lname4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/fname4"
+            android:hint="Last Name" />
+        
+        <EditText
+            android:id="@+id/college4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/lname4"
+            android:hint="College Name" />
+        
+        <EditText
+            android:id="@+id/mob_no4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/college4"
+            android:hint="Mobile No." 
+             android:inputType="number"/>
+        
+        <EditText
+            android:id="@+id/email4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/mob_no4"
+            android:hint="Email ID" 
+             android:inputType="textEmailAddress"/>
+        
+        <EditText
+            android:id="@+id/fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/email4"
+            android:hint="Amount Paid"
+            android:inputType="number"  />
+        
+        
+        <EditText
+            android:id="@+id/regmob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/fee"
+            android:hint="Registered by(mob no.)"
+            android:inputType="number" />
+        
+            </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

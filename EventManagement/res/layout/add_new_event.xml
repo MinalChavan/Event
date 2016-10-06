@@ -1,0 +1,86 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/seven"
+    android:orientation="vertical"
+    android:paddingTop="1dp" >
+
+     
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Add Event"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_purple"
+         />
+    
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="wrap_content"
+                 android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/holo_purple"
+                android:onClick="addNewevent"
+                android:text="Save"
+                android:textColor="@android:color/white" />
+       
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="57dp"
+            android:ems="10"
+            android:hint="Event Name" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eventName"
+            android:layout_below="@+id/eventName"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Location" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/location"
+            android:layout_below="@+id/location"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/date"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="Fees"
+            android:inputType="phone" />
+    </RelativeLayout>
+
+</RelativeLayout>
